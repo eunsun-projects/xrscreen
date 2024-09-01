@@ -1,0 +1,82 @@
+.admin_container{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.heading{
+    padding: 8vh;
+    text-align: center;
+}
+
+.go_wrapper{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.gogo{
+    margin: 1vh 1vw;
+    padding: 1vh 2vh;
+}
+
+.showcase_coord {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase_obj {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container_coord_inspector{
+    height: 100vh;
+}
+
+.textinput {
+    z-index: 2;
+    position: absolute;
+    background: black;
+    width: 360px;
+    height: 11vh;
+    color: white;
+    padding: 5px;
+    opacity: 0.6;
+}
+
+.record_button {
+    z-index: 2;
+    font-size: 5px;
+    position: absolute;
+    margin: 0 76%;
+    width: 80px;
+    height: 20px;
+    display: none;
+}
+
+.get_button {
+    z-index: 2;
+    font-size: 5px;
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    display: none;
+}
+
+.container_showcase {
+    margin: 0;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.arrDiv {
+    z-index: 2;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}

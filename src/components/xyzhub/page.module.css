@@ -1,0 +1,116 @@
+.xyzlandscape{
+    /* background-color: #2b58fc;
+    --dotSize: 0.05rem;
+    --bgSize: 0.15rem;
+    --bgPosition: calc(var(--bgSize) / 2);
+    background-image: radial-gradient( circle at center, midnightblue var(--dotSize), transparent 0 );
+    background-size: var(--bgSize) var(--bgSize);
+    background-repeat: var(--bgPosition) var(--bgPosition); */
+    background-color: #0000aa;
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+    font-size: 1.2rem;
+    font-family: 'DungGeunMo', cursive;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.hubbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    width: 100vw;
+    min-height: 100vh;
+    /* overflow-y: auto ; */
+    height: auto;
+    box-sizing: border-box;
+    background-color: #0000aa;
+
+    /* background-color: #2b58fc;
+    --dotSize: 0.05rem;
+    --bgSize: 0.15rem;
+    --bgPosition: calc(var(--bgSize) / 2);
+    background-image: radial-gradient( circle at center, midnightblue var(--dotSize), transparent 0 );
+    background-size: var(--bgSize) var(--bgSize);
+    background-repeat: var(--bgPosition) var(--bgPosition); */
+}
+
+/* .hubbox::-webkit-scrollbar-thumb{
+    background-color: #00ffbe;
+}
+
+.hubbox::-webkit-scrollbar{
+    background: transparent;
+    width: 1px;
+} */
+
+/* .hubbox svg{
+    fill: #00ffbe;
+    filter: drop-shadow(1px 5px 10px rgb(77 255 166/ 1));
+    margin: 1.2rem auto 0.5rem;
+} */
+.title{
+    font-family: 'DungGeunMo', cursive;
+    font-size: 2rem;
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+    width: 13rem;
+    text-align: center;
+    line-height: 5rem;
+}
+.title p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.navmenu{
+    font-family: 'DungGeunMo', cursive;
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+    width: 14rem;
+}
+.navitembox{
+    list-style: none;
+    padding: 0;
+}
+.navitem{
+    border: 1px solid #00ffbe;
+    margin: 1rem auto;
+    padding-left: 0.2rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navitem p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media screen and (max-width:375px) {
+    .hubbox svg{
+        margin: 1rem auto 0.5rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hubbox svg{
+        margin: 1.7rem auto 0.5rem;
+    }
+}

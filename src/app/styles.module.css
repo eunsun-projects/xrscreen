@@ -1,0 +1,30 @@
+.back{
+    background-color: #0000aa;
+    /* background-color: #2b58fc;
+    --dotSize: 0.05rem;
+    --bgSize: 0.15rem;
+    --bgPosition: calc(var(--bgSize) / 2);
+    background-image: radial-gradient( circle at center, midnightblue var(--dotSize), transparent 0 );
+    background-size: var(--bgSize) var(--bgSize);
+    background-repeat: var(--bgPosition) var(--bgPosition); */
+}
+.notp{
+    font-size: 5rem;
+    font-family: 'DungGeunMo';
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+}
+.notcon{
+    font-size: 2rem;
+    font-family: 'DungGeunMo';
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+}
+@media screen and (max-width:767px) and (orientation:portrait){
+    .notp{
+        font-size: 3rem;
+    }
+    .notcon{
+        font-size: 1.5rem;
+    }
+}

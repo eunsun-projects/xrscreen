@@ -1,0 +1,236 @@
+.vasback{
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #0000aa;
+}
+.vasback p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.vasbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DungGeunMo', cursive;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2rem;
+}
+.vasguidetitle{
+    font-size: 1.5rem;
+    /* padding-bottom: 1rem; */
+}
+.vasguide,.vasguideeg{
+    white-space: pre-line;
+    font-size: 1rem;
+    text-align: center;
+}
+.line{
+    width: 100%;
+    border: 0.5px solid #00ffbe;
+}
+.spacebox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.spacediv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spacediv p{
+    font-size: 1rem;
+    line-height: normal;
+    padding-top: 1rem;
+}
+.squre{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #00ffbe;
+}
+.rectangular{
+    width: 3rem;
+    height: 5rem;
+    border: 1px solid #00ffbe;
+}
+.tshapedbox{
+    width: 3.8rem;
+    height: 5rem;
+    border: 1px solid #00ffbe;
+}
+.tshaped1{
+    position: relative;
+    top: 50%;
+    left: 46%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 1.2rem;
+    background-color: #0000aa;
+    border-top: 1px solid #00ffbe;
+    border-left: 1px solid #00ffbe;
+    border-right: 1px solid #0000aa;
+    border-bottom: 1px solid #00ffbe;
+}
+.vastohome{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+/* .tshaped::after{
+    content: '';
+    position: absolute;
+    width: 2.2rem;
+    height: 1.5rem;
+    border-top: 1px solid #00ffbe;
+    border-left: 1px solid #00ffbe;
+    border-right: 1px solid #0000aa;
+    border-bottom: 1px solid #00ffbe;
+} */
+
+/* .vasguidehipen{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+} */
+/* .vasguideselect{
+    font-size: 1.2rem;
+}
+.vasdropdownbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+}
+.vasdropdown{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+} */
+.selectbtn{
+    background-color: transparent;
+    border: 1px solid #00ffbe;
+    font-family: 'DungGeunMo', cursive;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    width: 10rem;
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+    /* margin-bottom: 2rem; */
+}
+.dropdownmenu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: lower-alpha;
+    width: 10rem;
+    height: 7rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    border: 1px solid;
+    border-top: 0;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdownitem{
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.gogobtn{
+    background-color: transparent;
+    border: 1px solid #00ffbe;
+    border-left: 0;
+    font-family: 'DungGeunMo', cursive;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    width: 6rem;
+    color: #00ffbe;
+    text-shadow: 3px 3px 10px #00ffbe, -3px -3px 10px #00ffbe;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width:713px) and (max-width:767px) {
+    .vasbox{
+        font-size: 1rem;
+        width: 95%;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+    .vasguide{
+        width: 95%;
+        text-align: center;
+        font-size: 1rem;
+        word-break: keep-all;
+    }
+    .vasguideeg{
+        display: none;
+    }
+    .line{
+        border: 0.1px solid #00ffbe;
+    }
+    .tshaped1{
+        left: 47%;
+    }
+}
+@media screen and (min-width:321px) and (max-width:711px) {
+    .vasbox{
+        font-size: 1rem;
+        width: 95%;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+    .vasguide{
+        width: 95%;
+        text-align: center;
+        font-size: 1rem;
+        word-break: keep-all;
+    }
+    .vasguideeg{
+        display: none;
+    }
+    .line{
+        border: 0.1px solid #00ffbe;
+    }
+    .tshaped1{
+        left: 47%;
+    }
+}
+@media screen and (max-width:320px) {
+    .vasguidetitle{
+        font-size: 1.3rem;
+        line-height: 0rem;
+    }
+    .vasguide{
+        font-size: 0.9rem;
+    }
+    .spacediv p{
+        font-size: 0.9rem;
+    }
+    .vastohome{
+        font-size: 0.8rem;
+    }
+}

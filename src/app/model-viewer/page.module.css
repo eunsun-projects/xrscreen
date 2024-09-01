@@ -1,0 +1,415 @@
+.material_icons_outlined {
+    color: black;
+    font-family: 'Material Icons';
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.6rem;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.material_icons_outlined.que{
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+}
+.que:hover{
+    color: #00ffbe;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s linear;
+}
+.less:hover{
+    color: #00ffbe;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s linear;
+}
+.material_icons_outlined.less{
+    width: 1.85rem;
+}
+.material_icons_outlined.xyz_share{
+    padding: 0 0.3rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.temporal{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    z-index: 10000;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+}
+.gui_main_3d {
+    /* z-index: 9000; */
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    top:0;
+    pointer-events: auto;
+    overflow: hidden;
+}
+.xyz_none_landscape{
+    width: 100vw;
+    height: 100vh;
+    background: #bfbfbf;
+    display: none;
+}
+.xyz_none_landscape h3{
+    font-size: 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.gui_wrapper_3d{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    flex-direction: column;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+.gui_wrapper_3d span{
+    pointer-events: auto;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s linear;
+}
+.gui_wrapper_3d span:focus-visible{
+    outline: none;
+}
+.top_3d{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.top_3d a{
+    text-decoration: none;
+    background: transparent;
+}
+.top_3d a:focus{
+    text-decoration: none;
+    background-color: rgba(0,0,0,0);
+}
+.top_3d span:visited{
+    color: black;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s linear;
+}
+.top_3d span{
+    color: black;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s linear;
+}
+.mid_3d{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    /* transition: all 0.5s; */
+}
+.mid_change{
+    height: 65%;
+}
+.mid_left_3d{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.mid_right_3d{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mid_info{
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    min-height: 10%;
+    padding-left: 1.5%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.mid_info p{
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+}
+.mid_info_open{
+    bottom: 21%
+}
+.active{
+    display: flex;
+}
+.btm_3d{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+.btm_left_3d{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    width: 10%;
+}
+.btm_right_3d{
+    box-sizing: border-box;
+    padding-right: 0.5rem;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.btm_right_control{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btm_right_control span{
+    font-size: 1.6rem;
+}
+.gui_swipe_3d{
+    box-sizing: border-box;
+    position: relative;
+    width: fit-content;
+    min-width: 100vw;
+    height: 20vh;
+    /* background: #f0f0f0; */
+    /* transition: all 0.1s linear 0.1s; */
+    pointer-events: auto;
+    overflow: auto;
+}
+.xyzhide{
+    height: 0vh;
+}
+/* .gui-swipe-arrow-box{
+    transition: all 0.15s linear 0.15s;
+} */
+.gui_swipe_each_box{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    gap: 2vw;
+}
+.gui_down_arrow{
+    /* transform: translateY(calc(var(--vh, 1vh) * 100)); */
+    display: none;
+    position: fixed;
+    /* bottom: -16.5vh; */
+    height: 17vh;
+    /* top: 88.5vh; */
+    display: flex;
+    align-items: center;
+    /* background: #f0f0f0; */
+    transition: all 0.2s linear 0.2s;
+}
+.xyzfixed{
+    transform: translateY(0);
+    display: flex;
+}
+/* .xyzbefore{
+    transition: all 0.4s linear 0.6s;
+} */
+.xyzafter{
+    right: 0%;
+    z-index: 10;
+}
+.xyzafter_on{
+    bottom: 0;
+    transition: all 0.15s linear 0.15s;
+}
+.gui_swipe_each{
+    box-sizing: border-box;
+    margin: 0.5rem;
+    width: 10rem;
+    height: 90%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.gui_swipe_each:last-child {
+    margin-right: 3rem;
+}
+.xyzcanvas{
+    /* position: absolute;
+    z-index: -1; */
+    width: 100vw;
+    height: 100%;
+}
+
+
+.gui_wrapper_3d .xyzon{
+    color: #00ffbe;
+    background-color: rgba(0, 0, 0, 0);
+}
+.xyzloading{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #00ffbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    z-index: 10000;
+}
+.xyzcopied{
+    background-color: rgb(255, 255, 255);
+    color: #00ffbe;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.xyzlight{
+    cursor: pointer;
+}
+.xyzview{
+    cursor: pointer;
+}
+.xyzeffects{
+    cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) { /* when supported */
+    .gui_wrapper_3d span:hover{
+        color: #00ffbe;
+        background-color: rgba(0,0,0,0);
+        transition: all 0.2s linear;
+    }
+}
+@media screen and (max-width : 575px) and (orientation:portrait){
+    .btm_left_3d{
+        width: 20%;
+    }
+    .btm_right_3d{
+        width: 80%;
+        gap : 0.5rem
+    }
+    .gui_swipe_3d{
+        display: grid;
+        gap: 2vw;
+        height: 6em;
+        grid-template-columns: 6vw 96vw 6vw
+    }   
+    .gui_swipe_each_box{
+        /* margin: 0 1vw 0 1vw; */
+        /* margin-left: 2rem; */
+        gap: 2vw;
+    }
+    .gui_swipe_each:last-child{
+        margin-right: 5rem;
+    }
+    .gui_swipe_each{
+        margin: 0;
+        height: 80%;
+        width: 5rem;
+    }
+    .gui_down_arrow{
+        height: 100%;
+        width: 30px;
+        position: relative;
+    }
+    .xyzhide{
+        height: 0vh;
+    }
+    .xyzbefore{
+        height: 5.41em;
+        position: fixed;
+        z-index: 10;
+        transition: bottom 0.15s linear 0.15s;
+        /* bottom: -5.41em; */
+    }
+    .xyzafter{
+        height: 5.41em;
+        position: fixed;
+        z-index: 10;
+        transition: bottom 0.15s linear 0.15s;
+        /* bottom: -5.41em; */
+    }
+    .xyzafter_on{
+        bottom: 0;
+    }
+    .mid_info_open{
+        bottom: 15%
+    }
+}
+@media screen and (max-width : 575px) and (max-height: 740px) and (orientation:portrait){
+    .xyzafter{
+        height: 5.2em;
+    }
+    .xyzbefore{
+        height: 5.2em;
+    }
+}
+@media screen and (min-width : 576px) and (max-width: 991px) and (orientation:landscape){
+    .xyz_none_landscape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+    }
+    .gui_wrapper_3d{
+        display: none;
+    }
+    .xyzcanvas{
+        display: none;
+    }
+}
+@media screen and (max-width : 376px) and (orientation:portrait){
+    .mid_info_open{
+        bottom: 18%
+    }
+}
+@media screen and (max-width : 320px) and (orientation:portrait){
+    .btm_left_3d{
+        padding-left: 0.2rem;
+        width: 17%;
+    }
+    .btm_right_3d{
+        width: 83%;
+        margin-left: 0.2rem;
+    }
+}
